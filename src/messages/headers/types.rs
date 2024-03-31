@@ -3,6 +3,8 @@
 pub enum MessageType {
     #[serde(rename = "application/didcomm-encrypted+json")]
     DidCommJwe,
+    #[serde(rename = "JWM/1.0")]
+    DidCommJwm,
     #[serde(rename = "application/didcomm-signed+json")]
     DidCommJws,
     #[serde(rename = "application/didcomm-plain+json")]
